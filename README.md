@@ -20,11 +20,11 @@ ___
   
 ## How to Use
 
-![Startpage Search Functionality](https://i.imgur.com/Ex6NGbr.gif)
+<img src="/exGif/search.gif?raw=true" width="720px">
 
 This startpage is very simple - once you load it up, the search bar is automatically focused for you to start typing. Anything that's not explicitly a URL will be google'd - any URL's will load in on the same tab.
 
-![Startpage Sidebar Functionality](https://i.imgur.com/Q7LlFyb.gif)
+<img src="/exGif/sidebar.gif?raw=true" width="720px">
 
 Clicking on any of the sections on the left hand side will expand their relevant links. Clicking inside of the bar but not on a link will close the bar.
 
