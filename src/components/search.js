@@ -7,6 +7,7 @@ class Search extends Component {
         isValidURL: false
     }
 
+    // Checks if input is a valid url. If so, links to page. If not, searches for it.
      onSubmitHandler = (event) => {
         let curState = this.state.formInput;
         let isValid = this.state.isValidURL;
@@ -19,13 +20,16 @@ class Search extends Component {
             window.location.assign(secure + searchEngine + curState);
         }
 
+        // prevent page from reloading on submit
         event.preventDefault();
     }
 
+    // Checks if input is a valid URL, and sets state for formInput and isValidURL respectively.
     updateInput = (newState) => {
-
+        // due to async setState, we're just using the input value at the time.
         let curState = newState.target.value;
 
+        // RegEx to check that our input is a valid URL.
         let isURL = new RegExp('^(https?:\\/\\/)?'+ // protocol
         '((([a-z\\d]([a-z\\d-]*[a-z\\d])*)\\.)+[a-z]{2,}|'+ // domain name and extension
         '((\\d{1,3}\\.){3}\\d{1,3}))'+ // OR ip (v4) address
@@ -34,6 +38,7 @@ class Search extends Component {
         '(\\?[;&a-z\\d%@_.,~+&:=-]*)?'+ // query string
         '(\\#[-a-z\\d_]*)?$','i'); // fragment locator
         
+        // If it's a URL, set state appropriately. Else, also set state appropriately.
         if(isURL.test(curState)){
             this.setState({
                 isValidURL: true,

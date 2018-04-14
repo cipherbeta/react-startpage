@@ -10,6 +10,7 @@ import Sidebar from './components/sidebar';
 import Data from './data.json';
 
 class App extends Component {
+    //state does jack for now, custom bg's coming soon
     state = {
         bgSelected: "mbg4"
     }
