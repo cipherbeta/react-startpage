@@ -1,0 +1,79 @@
+{
+    "backgrounds": {
+        "a": "mbg1",
+        "b": "mbg2",
+        "c": "mbg3",
+        "d": "mbg4"
+    },
+    "links": {
+        "Fourchan": [
+            {
+                "name": "/g/",
+                "url": "https://4chan.org/g"
+            },
+            {
+                "name": "/a/",
+                "url": "https://4chan.org/a"
+            },
+            {
+                "name": "/fit/",
+                "url": "https://4chan.org/fit"
+            },
+            {
+                "name": "/vg/",
+                "url": "https://4chan.org/vg"
+            }
+        ],
+        "Social": [
+            {
+                "name": "Facebook",
+                "url": "https://facebook.com"
+            },
+            {
+                "name": "Reddit",
+                "url": "https://reddit.com"
+            },
+            {
+                "name": "Youtube",
+                "url": "https://youtube.com"
+            },
+            {
+                "name": "Gab.io",
+                "url": "https://gab.io"
+            }
+        ],
+        "Coding": [
+            {
+                "name": "Codepen.io",
+                "url": "https://codepen.io"
+            },
+            {
+                "name": "Codewars",
+                "url": "https://codewars.com"
+            },
+            {
+                "name": "Codingame",
+                "url": "https://codingame.com"
+            },
+            {
+                "name": "Udemy",
+                "url": "https://udemy.com/home/my-courses/learning/"
+            }
+        ],
+        "Music": [
+            {
+                "name": "Soundcloud",
+                "url": "https://soundcloud.com/stream"
+            },
+            {
+                "name": "GPlay Music",
+                "url": "https://play.google.com/music/listen#/home"
+            },
+            {
+                "name": "Pandora",
+                "url": "https://www.pandora.com/station"
+            }
+        ]
+    }
+}
+
