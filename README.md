@@ -28,6 +28,34 @@ This startpage is very simple - once you load it up, the search bar is automatic
 
 Clicking on any of the sections on the left hand side will expand their relevant links. Clicking inside of the bar but not on a link will close the bar.
 
+
+### How to Install
+
+Start by cloning the repo.
+
+```SSH
+git clone https://github.com/cipherbeta/react-startpage
+```
+
+Then, install dependencies.
+
+```SSH
+npm install
+```
+
+Finally, make your tweaks. If you want an active testing environment, run two commands. The first is a live server so you can see your updates in real time. The latter watches `src/scss` for changes and outputs compiled CSS to `public/css`.
+
+```SSH
+npm start
+npm run sass
+```
+
+Once you've made you changes, you're going to want to build it. This outputs a build folder that you can hook up to your browser of choice as a start / new tab page.
+
+```SSH
+npm run build
+```
+
 ### How to Customize
 
 To change any sidebar 'sections', there's two things that you're going to want to change. First off, you've got the links inside the sidebar sections. Go ahead and take a look at `src/data.json`. You'll see two key/value pairs, one for backgrounds (work in progress) and one for links. Take a peek at the links key pair at the moment. It's an object with a few other objects, which in turn have an array filled with objects that have two key pairs - `name` and `url` respectively. Name here refers to the actual text in the link. Say if you wanted to go to Google.com, you'd put the `name` value to "Google". The URL key refers to the actual URL - i.e. `https://google.com`. Replace these keys or add in more of your own to update the sidebars as you like.
